@@ -103,8 +103,20 @@ for (let item of perguntas) {
 
   for (let resposta of item.respostas) {
     const dt = quizItem.querySelector("dl dt").cloneNode(true);
+    const answerIndex = perguntas.indexOf(item);
+    const inputElement = dt.querySelector("input");
 
     dt.querySelector("span").textContent = resposta;
+    inputElement.setAttribute("name", `Pergunta ${answerIndex}`);
+    inputElement.value = item.respostas.indexOf(resposta);
+
+    inputElement.onchange = (event) => {
+      let selectedAnswer = event.target.value == item.correta;
+
+      if (selectedAnswer) {
+        alert("ACERTEI!");
+      }
+    };
 
     quizItem.querySelector("dl").appendChild(dt);
   }
