@@ -9,27 +9,29 @@
 </head>
 
 <body>
-  <h1>Teste seus conhecimentos 🎯</h1>
+  <main>
+    <h1>Teste seus conhecimentos 🎯</h1>
 
-  <div id="quiz"></div>
+    <div id="quiz"></div>
 
-  <template>
-    <div class="quiz-item">
-      <h3>Pergunta 01</h3>
-      <dl>
-        <dt>
-          <input type="radio" name="item" value='0'>
-          <span>
-            Resposta A
-          </span>
-        </dt>
-      </dl>
+    <template>
+      <div class="quiz-item">
+        <h3>Pergunta 01</h3>
+        <dl>
+          <dt>
+            <input type="radio" name="item" value='0'>
+            <span>
+              Resposta A
+            </span>
+          </dt>
+        </dl>
+      </div>
+    </template>
+    <div class="acertos">
+      <strong>Acertos:</strong>
+      <span>0 de 10</span>
     </div>
-  </template>
-  <div class="acertos">
-    <strong>Acertos:</strong>
-    <span>0 de 10</span>
-  </div>
+  </main>
   <script src="./script/main.js"></script>
 </body>
 

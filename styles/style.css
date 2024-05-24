@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap");
+
 *,
 *::after,
 *::before {
@@ -6,8 +8,35 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
+  max-width: 100%;
+  max-height: 100%;
   text-rendering: optimizeLegibility;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-adjust: 100%;
   image-rendering: optimizeQuality;
   overflow-x: hidden;
+}
+
+:root {
+  --blue: #0070f3;
+}
+
+main {
+  font-family: "Reddit Mono", monospace;
+  max-width: 640px;
+  margin: 0 auto 4.5rem;
+}
+
+.acertos {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #0e21a0;
+  padding: 12px;
+  text-align: center;
 }
