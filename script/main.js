@@ -97,6 +97,10 @@ const perguntas = [
 const quiz = document.querySelector("#quiz");
 const template = document.querySelector("template");
 
+const rightAnswers = new Set();
+const totalQuestions = perguntas.length;
+const showTotal = document.querySelector(".acertos span");
+
 for (let item of perguntas) {
   const quizItem = template.content.cloneNode(true);
   quizItem.querySelector("h3").textContent = item.pergunta;
@@ -111,11 +115,13 @@ for (let item of perguntas) {
     inputElement.value = item.respostas.indexOf(resposta);
 
     inputElement.onchange = (event) => {
-      let selectedAnswer = event.target.value == item.correta;
+      const selectedAnswer = event.target.value == item.correta;
 
+      rightAnswers.delete();
       if (selectedAnswer) {
-        alert("ACERTEI!");
+        rightAnswers.add(item);
       }
+      showTotal.textContent = `${rightAnswers.size} de ${totalQuestions}`;
     };
 
     quizItem.querySelector("dl").appendChild(dt);
@@ -125,3 +131,4 @@ for (let item of perguntas) {
 }
 
 console.log(template, quizItem);
+
