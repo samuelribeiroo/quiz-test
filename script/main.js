@@ -1,4 +1,4 @@
-const perguntas = [
+const questions = [
   {
     pergunta: "Qual é a finalidade do comando 'console.log()' em JavaScript?",
     respostas: [
@@ -119,16 +119,16 @@ const quiz = document.querySelector("#quiz");
 const template = document.querySelector("template");
 
 const rightAnswers = new Set();
-const totalQuestions = perguntas.length;
-const showTotal = document.querySelector(".acertos span");
+const totalQuestions = questions.length;
+const showTotal = document.querySelector(".result-component span");
 
-for (let item of perguntas) {
+for (let item of questions) {
   const quizItem = template.content.cloneNode(true);
   quizItem.querySelector("h3").textContent = item.pergunta;
 
   for (let resposta of item.respostas) {
     const dt = quizItem.querySelector("dl dt").cloneNode(true);
-    const answerIndex = perguntas.indexOf(item);
+    const answerIndex = questions.indexOf(item);
     const inputElement = dt.querySelector("input");
 
     dt.querySelector("span").textContent = resposta;
