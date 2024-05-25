@@ -13,7 +13,7 @@ Esse projeto foi desenvolvido com as tecnologias abaixo e com a finalidade ser u
 
 <br>
 
-- HTML: Estrutura semântica da página, com uso de tags modernos.
+- HTML: Estrutura semântica da página, com uso de tags modernas.
 <br>
 
 - CSS: Layout responsivo com Flexbox para melhorar experiência do usuário, usando as features mais recentes do CSS.
