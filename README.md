@@ -9,24 +9,24 @@
 
 ## Componentes Técnicos
 
-Esse projeto foi desenvolvido com as tecnologias abaixo e com a finalidade ser um código eficiente e moderno, tanto na lógica quanto no design:
+Esse projeto foi desenvolvido com as tecnologias abaixo e com a finalidade ser um código eficiente e moderno, tanto na lógica quanto no design.
 
 <br>
 
-- HTML: Estrutura semântica da página, com uso de tags modernas.
+- HTML: Estrutura semântica da página, com o padrão HTML5.
 <br>
 
-- CSS: Layout responsivo com Flexbox para melhorar experiência do usuário, usando as features mais recentes do CSS.
+- CSS: Layout responsivo com Flexbox para melhorar experiência do usuário, usando as features mais recentes.
 
 <br>
 
-- JavaScript (ES6+): Manipulação do DOM, eventos de clique e exibição de dados vindos do formato JSON.
+- JavaScript (ES6+): Manipulação do DOM, eventos de clique e exibição de dados vindos do arquivo JSON.
 
 <br>
 
 ## Sobre Projeto
 
- <p align = 'left'>Quiz interativo pra testar os seus conhecimentos técnicos sobre a linguagem JavaScript.</p>
+ <p align = 'left'>Quiz interativo pra testar conhecimentos técnicos sobre JavaScript.</p>
 
 <br>
 
