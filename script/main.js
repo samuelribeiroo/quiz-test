@@ -1,4 +1,4 @@
-import { questions } from "./databse.js";
+import { questions } from "./database.js";
 
 const quiz = document.querySelector("#quiz");
 const template = document.querySelector("template");
@@ -20,7 +20,7 @@ for (let item of questions) {
     inputElement.setAttribute("name", `Pergunta ${answerIndex}`);
     inputElement.value = item.respostas.indexOf(resposta);
 
-    inputElement.onchange = (event) => {
+    inputElement.onchange = event => {
       const selectedAnswer = event.target.value == item.correta;
 
       rightAnswers.delete();
